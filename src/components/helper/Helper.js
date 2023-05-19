@@ -1,4 +1,4 @@
-export const showNotification=(setter) =>{
+export const showNotification=(setter) => {
 setter(true)
 setTimeout(() =>{
     setter(false)

@@ -14,9 +14,11 @@ const Popup=({correctLetters, wrongLetters, selectedWord, setPlayable, playAgain
         finalMessageRevealWord=`...the word was: ${selectedWord}`
         playable=false
     }
+
     useEffect(() => {
         setPlayable(playable)
     })
+    
     return(
         <div className="popup-container" style={finalMessage !=='' ? {display:'flex'} : {}}>
             <div className="popup">
