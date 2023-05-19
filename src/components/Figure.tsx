@@ -1,9 +1,13 @@
-import React from "react";
+import React from 'react';
 
-const Figure=({wrongLetters}) => {
+interface FigureProps {
+    wrongLetters: string[]
+}
+
+const Figure: React.FC<FigureProps> = ({wrongLetters}) => {
     const error=wrongLetters.length
-    return(
-        <svg className="figure-container">
+    return (
+        <svg className='figure-container'>
             {/* <!-- Rod --> */}
             <line x1="60" y1="20" x2="140" y2="20" />
             <line x1="140" y1="20" x2="140" y2="50" />
